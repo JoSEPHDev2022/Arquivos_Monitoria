@@ -1,0 +1,44 @@
+AMBIENTES VIRTUAIS
+
+1 - Criar o repositório do projeto
+
+2 - Entrar no repositório pelo VSCode, abrir um terminal novo e inserir o código abaixo para criar o ambiente
+virtual:
+
+     python -m venv nome_do_ambiente
+        OU
+        py -m venv nome_do_ambiente
+
+3 - Com o ambiente criado, precisamos ativá-lo, basta inserir o código:
+
+No Windows:
+
+           nome_do_ambiente/Scripts/activate
+
+No macOS/Linux:
+           source nome_do_ambiente/bin/activate
+
+Com isso, o ambiente está criado e ativado, agora basta instalar os pacotes necessários:
+
+     pip install pandas 
+
+Após a criação, ativação e instalação das bibliotecas no nosso ambiente, podemos criar um arquivo especial,
+que é comumente usado para exportar as informações sobre as dependências de um projeto Python 
+para um arquivo de requisitos ('requirements.txt').
+
+1 - Ative o ambiente virtual
+
+2 - Execute o comando a seguir no terminal:
+
+      pip freeze > requirements.txt
+
+Isso irá listar todas as dependências instaladas no ambiente virtual, juntamente com suas versões, 
+na saída do terminal.
+
+Esse comando redireciona a saída do comando pip freeze para o arquivo requirements.txt. 
+Agora você terá um arquivo requirements.txt que contém a lista de dependências e versões.
+
+Agora, outros desenvolvedores podem instalar as dependências dos seus arquivos e projetos digitando
+o seguinte código no ambiente virtual deles:
+
+         pip install -r requirements.txt
