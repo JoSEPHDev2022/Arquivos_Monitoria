@@ -68,9 +68,9 @@ def filtrar_por_idade(pessoas, idade_minina):
 
 # Lista com participantes e idades
 pessoas = [{'Nome': 'José', 'Idade': 14}, 
-            {'Nome': 'Lucas', 'Idade': 25}, 
-            {'Nome': 'Luciana', 'Idade': 65},
-            {'Nome': 'Matheus', 'Idade': 55}]
+           {'Nome': 'Lucas', 'Idade': 25}, 
+           {'Nome': 'Luciana', 'Idade': 65},
+           {'Nome': 'Matheus', 'Idade': 55}]
 
 # Pedir a nota de corte (nesse caso a idade) para o usuário
 idade_minina = int(input('Informe a idade mínima desejada: '))
